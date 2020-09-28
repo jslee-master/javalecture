@@ -4,6 +4,7 @@ public class VariableScope {
 
 	static void myprint() {
 		System.out.println(v4);
+		run();
 	}
 
 	//멤버 메소드
@@ -18,7 +19,6 @@ public class VariableScope {
 		//System.out.println(ch);
 		
 		myprint();
-		run();
 		printVar();
 	}
 	
