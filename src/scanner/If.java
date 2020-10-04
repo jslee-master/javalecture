@@ -45,6 +45,12 @@ public class If {
 */
 		
 		//SwitchExample
+		System.out.print("주사위를 굴릴 횟수를 입력해주세요: ");
+		Scanner sc = new Scanner(System.in);
+		int sum = sc.nextInt();
+		int i;
+		
+		for(i=1; i<=sum; i++) {
 		int num = (int)(Math.random()*6) + 1;
 		
 		switch(num) {
@@ -66,6 +72,7 @@ public class If {
 			default:
 				System.out.println("6번이 나왔습니다.");
 				break;
+			}
 		}
 
 	}

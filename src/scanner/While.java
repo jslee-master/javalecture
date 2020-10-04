@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class While {
 
-//	public static void main(String[] args) {
+	public static void main(String[] args) {
 
 /*		//WhilePrintFrom1To10Example
 		System.out.print("1부터 10 사이의 숫자를 입력해주세요: ");
@@ -37,7 +37,6 @@ public class While {
 */
 		
 		//WhileKeyControlExample
-		public static void main(String[] args) throws Exception {
 			boolean run = true;		
 			int speed = 0;
 			int keyCode = 0;
@@ -49,16 +48,16 @@ public class While {
 					System.out.println("-----------------------------");
 					System.out.print("선택: ");
 				}
-				
-				keyCode = System.in.read();
-				
-				if (keyCode == 49) { //1
+				Scanner sc = new Scanner(System.in);
+				int i = sc.nextInt();
+								
+				if (i == 1) { //1
 					speed++;
 					System.out.println("현재 속도=" + speed);
-				} else if (keyCode == 50) { //2
+				} else if (i == 2) { //2
 					speed--;
 					System.out.println("현재 속도=" + speed);
-				} else if (keyCode == 51) { //3
+				} else if (i == 3) { //3
 					run = false;
 				}
 			}	
